@@ -1,0 +1,34 @@
+div.row
+	div.col-lg-12
+		h1.page-header Hourly and daily average
+div.row(ng-controller="ChartPerAVGCtrl")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Temperature values per hour 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgHourTemperature.data",labels="lineAvgHourTemperature.labels",legend="true",click="lineAvgHourTemperature.onClick",series="lineAvgHourTemperature.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Temperature values per Day 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgDayTemperature.data",labels="lineAvgDayTemperature.labels",legend="true",click="lineAvgDayTemperature.onClick",series="lineAvgDayTemperature.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Humidity values per Day 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgHourHumidity.data",labels="lineAvgHourHumidity.labels",legend="true",click="lineAvgHourHumidity.onClick",series="lineAvgHourHumidity.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Humidity values per Day 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgDayHumidity.data",labels="lineAvgDayHumidity.labels",legend="true",click="lineAvgDayHumidity.onClick",series="lineAvgDayHumidity.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Iluminity values per Day 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgHourIluminity.data",labels="lineAvgHourIluminity.labels",legend="true",click="lineAvgHourIluminity.onClick",series="lineAvgHourIluminity.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading AVG Iluminity values per Day 
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineAvgDayIluminity.data",labels="lineAvgDayIluminity.labels",legend="true",click="lineAvgDayIluminity.onClick",series="lineAvgDayIluminity.series")

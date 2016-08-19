@@ -1,0 +1,34 @@
+div.row
+	div.col-lg-12
+		h1.page-header Max e min hourly
+div.row(ng-controller="ChartPerHourCtrl")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Max Temperature values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMaxTemperature.data",labels="lineMaxTemperature.labels",legend="true",click="lineMaxTemperature.onClick",series="lineMaxTemperature.series")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Min Temperature values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMinTemperature.data",labels="lineMinTemperature.labels",legend="true",click="lineMinTemperature.onClick",series="lineMinTemperature.series")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Max Humidity values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMaxHumidity.data",labels="lineMaxHumidity.labels",legend="true",click="lineMaxHumidity.onClick",series="lineMaxHumidity.series")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Min Humidity values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMinHumidity.data",labels="lineMinHumidity.labels",legend="true",click="lineMinHumidity.onClick",series="lineMinHumidity.series")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Max Iluminity values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMaxIluminity.data",labels="lineMaxIluminity.labels",legend="true",click="lineMaxIluminity.onClick",series="lineMaxIluminity.series")
+	div#bar-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Min Iluminity values per hour 
+			div.panel-body
+				canvas#bar.chart.chart-bar.chart-xl(data="lineMinIluminity.data",labels="lineMinIluminity.labels",legend="true",click="lineMinIluminity.onClick",series="lineMinIluminity.series")

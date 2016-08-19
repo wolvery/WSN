@@ -1,0 +1,41 @@
+div.row
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="16", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-copyright.fa-5x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{lastInserted.temperature}} 
+						div.ng-binding Temperatura (Celsius)
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="12", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-cloud.fa-5x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{lastInserted.humidity}} 
+						div.ng-binding Umidade (%)
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="12", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-lightbulb-o.fa-5x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{lastInserted.iluminity}} 
+						div.ng-binding Luz {{luz}} (LX)
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="12", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-user.fa-5x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{lastInserted.motion}}
+						div.ng-binding {{presenca}}
+
+div.row
+	
+

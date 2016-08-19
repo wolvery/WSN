@@ -1,0 +1,32 @@
+br
+div.row
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="16", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-lemon-o.fa-1x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{In1}} 
+						div.ng-binding 
+			a(ng-click='update(1)')
+				.panel-footer
+					span.pull-left Change Relay 1 state
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					.clearfix
+	div.col-lg-3.col-md-6.ng-isolate-scope(number="12", comments="New tasks!",colour="primary",type="user")
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-lemon-o.fa-1x
+					div.col-xs-9.text-right
+						div.huge.ng-binding {{In2}}
+						div.ng-binding 
+			a(ng-click='update(2)')
+				.panel-footer
+					span.pull-left Change Relay 2 state
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					.clearfix

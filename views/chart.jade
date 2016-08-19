@@ -1,0 +1,19 @@
+div.row
+	div.col-lg-12
+		h1.page-header Last 25 data
+div.row(ng-controller="ChartCtrl")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Temperature
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineLastTemperature.data",labels="lineLastTemperature.labels",legend="true",click="lineLastTemperature.onClick",series="lineLastTemperature.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Humidity
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineLastHumidity.data",labels="lineLastHumidity.labels",legend="true",click="lineLastHumidity.onClick",series="lineLastHumidity.series")
+	div#line-chart.col-lg-6.col-sm-12
+		div.panel.panel-default
+			div.panel-heading Iluminity
+			div.panel-body
+				canvas#line.chart.chart-line.chart-xl(data="lineLastIluminity.data",labels="lineLastIluminity.labels",legend="true",click="lineLastIluminity.onClick",series="lineLastIluminity.series")
